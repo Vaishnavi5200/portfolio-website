@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaishnavi Dwivedi — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== CURSOR (decorative dot that follows your mouse) ===== -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">VD<span class="accent">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#journey" class="nav-link">Journey</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <span class="theme-icon" id="themeIcon">☀️</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <!-- Background decorations -->
+    <div class="hero-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="hero-body">
+      <div class="hero-text">
+        <span class="hero-greeting fade-in">Hii Everybody! </span>
+        <h1 class="hero-name fade-in d1">
+          I'm <span class="accent">Vaishnavi</span><br/>Dwivedi
+        </h1>
+        <p class="hero-role fade-in d2">
+          <span id="typewriter"></span><span class="blink-cursor">|</span>
+        </p>
+        <p class="hero-location fade-in d3">📍 Lucknow, Uttar Pradesh, India</p>
+        <div class="hero-cta fade-in d4">
+          <a href="#projects" class="btn-primary">See My Work ↓</a>
+          <a href="#contact" class="btn-ghost">Let's Connect</a>
+        </div>
+        <div class="hero-pills fade-in d5">
+          <a href="https://github.com/Vaishnavi5200" target="_blank" rel="noopener" class="pill">🐙 GitHub</a>
+          <a href="https://www.linkedin.com/in/vaishnavi-dwivedi-384773390" target="_blank" rel="noopener" class="pill">💼 LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in d2">
+        <div class="avatar-wrap">
+          <div class="avatar-ring-outer"></div>
+          <div class="avatar-ring-inner"></div>
+          <div class="avatar-core">
+            <span>👩‍💻</span>
+          </div>
+          <!-- Floating skill bubbles -->
+          <div class="bubble b1">HTML</div>
+          <div class="bubble b2">CSS</div>
+          <div class="bubble b3">JS</div>
+          <div class="bubble b4">⚛️ Next</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span class="scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-eyebrow">WHO I AM</div>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I'm a <strong>first-year B.Tech CSE student</strong> with a deep love for building things on the web. I started with simple HTML pages and haven't stopped since.</p>
+          <p>What drives me is that moment when code becomes a real, working experience someone can see and touch. I'm constantly learning, experimenting, and levelling up my craft.</p>
+          <p>I'm currently exploring <span class="accent"><strong>React.js</strong></span> and looking for internship opportunities where I can grow and contribute.</p>
+          <div class="info-chips">
+            <span class="chip">🎓 1st Year B.Tech CSE</span>
+            <span class="chip">🌱 Learning React.js</span>
+            <span class="chip">🎯 Seeking Internship</span>
+            <span class="chip">💡 Open to Collaborate</span>
+          </div>
+        </div>
+
+        <div class="code-window reveal d1">
+          <div class="cw-header">
+            <span class="cw-dot red"></span>
+            <span class="cw-dot yellow"></span>
+            <span class="cw-dot green"></span>
+            <span class="cw-filename">about_me.js</span>
+          </div>
+          <div class="cw-body">
+<pre><code><span class="c-kw">const</span> <span class="c-var">me</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Vaishnavi Dwivedi"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"Frontend Developer"</span>,
+  <span class="c-key">year</span>: <span class="c-str">"B.Tech CSE, 1st Year"</span>,
+  <span class="c-key">from</span>: <span class="c-str">"Lucknow, India"</span>,
+  <span class="c-key">stack</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
+  <span class="c-key">learning</span>: <span class="c-str">"React.js 🔥"</span>,
+  <span class="c-key">goal</span>: <span class="c-str">"Land my first internship"</span>,
+  <span class="c-key">status</span>: <span class="c-str">"Available ✅"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY SECTION ===== -->
+  <section class="section journey-section" id="journey">
+    <div class="container">
+      <div class="section-eyebrow">MY STORY</div>
+      <h2 class="section-title">Learning <span class="accent">Journey</span></h2>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-marker">
+            <span class="tl-num">01</span>
+          </div>
+          <div class="tl-card">
+            <div class="tl-year">2023</div>
+            <h3>B.Tech Begins 🎓</h3>
+            <p>Joined engineering with stars in my eyes. Got introduced to C, algorithms, and the magic of making computers do things.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal d1">
+          <div class="tl-marker">
+            <span class="tl-num">02</span>
+          </div>
+          <div class="tl-card">
+            <div class="tl-year">Early 2024</div>
+            <h3>Hello, Web Dev! 🌐</h3>
+            <p>Discovered HTML & CSS. Realised I could build things that look amazing in a browser. Made my first webpage — ugly, but mine.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal d2">
+          <div class="tl-marker">
+            <span class="tl-num">03</span>
+          </div>
+          <div class="tl-card">
+            <div class="tl-year">Mid 2024</div>
+            <h3>First Real Project 🛒</h3>
+            <p>Cloned Amazon's homepage with HTML & CSS. Tackled complex layouts, navigation, and responsive grids for the first time.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal d3">
+          <div class="tl-marker">
+            <span class="tl-num">04</span>
+          </div>
+          <div class="tl-card">
+            <div class="tl-year">2025</div>
+            <h3>JavaScript & GitHub ⚡</h3>
+            <p>Added JS to the mix. Learned version control, started pushing code to GitHub, and hosted projects live on the internet.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal d4">
+          <div class="tl-marker active">
+            <span class="tl-num">05</span>
+          </div>
+          <div class="tl-card active-card">
+            <div class="tl-year">Now 🔥</div>
+            <h3>React.js Mode Activated ⚛️</h3>
+            <p>Exploring React — components, state, props. Building interactive UIs and getting ready to take on the modern web.</p>
+            <span class="current-badge">Currently Here</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-eyebrow">WHAT I KNOW</div>
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="sk-top">
+            <span class="sk-icon">🌐</span>
+            <span class="sk-pct">85%</span>
+          </div>
+          <h3 class="sk-name">HTML5</h3>
+          <p class="sk-desc">Semantic markup, forms, accessibility</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:85%"></div></div>
+        </div>
+
+        <div class="skill-card reveal d1">
+          <div class="sk-top">
+            <span class="sk-icon">🎨</span>
+            <span class="sk-pct">80%</span>
+          </div>
+          <h3 class="sk-name">CSS3</h3>
+          <p class="sk-desc">Flexbox, Grid, animations, responsive</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:80%"></div></div>
+        </div>
+
+        <div class="skill-card reveal d2">
+          <div class="sk-top">
+            <span class="sk-icon">⚡</span>
+            <span class="sk-pct">60%</span>
+          </div>
+          <h3 class="sk-name">JavaScript</h3>
+          <p class="sk-desc">DOM, events, functions, fetch</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:60%"></div></div>
+        </div>
+
+        <div class="skill-card reveal d3">
+          <div class="sk-top">
+            <span class="sk-icon">🐙</span>
+            <span class="sk-pct">70%</span>
+          </div>
+          <h3 class="sk-name">Git & GitHub</h3>
+          <p class="sk-desc">Version control, repos, deployment</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:70%"></div></div>
+        </div>
+
+        <div class="skill-card reveal d4">
+          <div class="sk-top">
+            <span class="sk-icon">📱</span>
+            <span class="sk-pct">75%</span>
+          </div>
+          <h3 class="sk-name">Responsive Design</h3>
+          <p class="sk-desc">Mobile-first, media queries</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:75%"></div></div>
+        </div>
+
+        <div class="skill-card reveal d5 learning-card">
+          <div class="sk-top">
+            <span class="sk-icon">⚛️</span>
+            <span class="sk-pct learning-label">Learning</span>
+          </div>
+          <h3 class="sk-name">React.js</h3>
+          <p class="sk-desc">Components, state, props — in progress</p>
+          <div class="sk-bar"><div class="sk-fill learning-fill" style="--w:25%"></div></div>
+          <span class="in-progress-tag">🌱 In Progress</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-eyebrow">WHAT I'VE BUILT</div>
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Amazon Clone -->
+        <article class="proj-card reveal">
+          <div class="proj-preview">
+            <div class="proj-emoji">🛒</div>
+            <div class="proj-hover-links">
+              <a href="https://vaishnavi5200.github.io/amazon-clone-html-css/" target="_blank" rel="noopener" class="ph-btn">Live ↗</a>
+              <a href="https://github.com/Vaishnavi5200/amazon-clone-html-css" target="_blank" rel="noopener" class="ph-btn">Code ↗</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag">HTML</span>
+              <span class="ptag">CSS</span>
+            </div>
+            <h3 class="proj-title">Amazon Clone</h3>
+            <p class="proj-desc">A pixel-perfect front-end recreation of Amazon's homepage — complete with navigation bar, hero banners, product grid, and footer. Practiced complex layouts and responsive CSS.</p>
+            <div class="proj-links">
+              <a href="https://vaishnavi5200.github.io/amazon-clone-html-css/" target="_blank" rel="noopener" class="plink">🌐 Live Demo</a>
+              <a href="https://github.com/Vaishnavi5200/amazon-clone-html-css" target="_blank" rel="noopener" class="plink">💻 Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Coming soon card -->
+        <article class="proj-card coming-soon reveal d1">
+          <div class="proj-preview">
+            <div class="proj-emoji anim-spin">🚀</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag soon">Coming Soon</span>
+            </div>
+            <h3 class="proj-title">Next Project</h3>
+            <p class="proj-desc">Something exciting is cooking with JavaScript & React. Follow on GitHub to be the first to see it launch!</p>
+            <div class="proj-links">
+              <a href="https://github.com/Vaishnavi5200" target="_blank" rel="noopener" class="plink">💻 Follow on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-eyebrow">SAY HELLO</div>
+      <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+      <p class="contact-intro">I'm always excited to talk about internships, collaborations, or just about web development. Reach out — I don't bite! 😄</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="ci-item">
+            <span class="ci-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <p>Lucknow, Uttar Pradesh, India</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon">🎓</span>
+            <div>
+              <strong>Education</strong>
+              <p>B.Tech CSE — 1st Year</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon">🟢</span>
+            <div>
+              <strong>Status</strong>
+              <p>Open to Internships</p>
+            </div>
+          </div>
+          <div class="contact-social-btns">
+            <a href="https://github.com/Vaishnavi5200" target="_blank" rel="noopener" class="csb github">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/vaishnavi-dwivedi-384773390" target="_blank" rel="noopener" class="csb linkedin">💼 LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="contact-form-box reveal d1">
+          <form id="contactForm" class="cform" novalidate>
+            <div class="cform-group">
+              <label for="cname">Your Name</label>
+              <input type="text" id="cname" name="name" placeholder="e.g. Priya Sharma" required />
+            </div>
+            <div class="cform-group">
+              <label for="cemail">Email Address</label>
+              <input type="email" id="cemail" name="email" placeholder="you@email.com" required />
+            </div>
+            <div class="cform-group">
+              <label for="csubject">Subject</label>
+              <input type="text" id="csubject" name="subject" placeholder="Internship / Collaboration / Hi!" />
+            </div>
+            <div class="cform-group">
+              <label for="cmessage">Message</label>
+              <textarea id="cmessage" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="cform-submit" id="submitBtn">
+              <span id="submitText">Send Message 🚀</span>
+            </button>
+            <div class="cform-success" id="formSuccess">
+              ✅ Thanks! Connect on LinkedIn for a quick reply.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">VD<span class="accent">.</span></span>
+      <p>Designed & Built by <strong>Vaishnavi Dwivedi</strong> with HTML, CSS & JS</p>
+      <p class="footer-copy">© 2025 Vaishnavi Dwivedi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
