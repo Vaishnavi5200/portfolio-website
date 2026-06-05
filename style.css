@@ -835,6 +835,121 @@ body:hover .cursor { opacity: 1; }
 
 .coming-soon { opacity: 0.7; }
 
+/* ===== 10.5 CERTIFICATIONS ===== */
+
+.cert-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+
+}
+
+.cert-card {
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius);
+
+  padding: 28px;
+
+  text-align: center;
+
+  transition: all var(--transition);
+
+}
+
+.cert-card:hover {
+
+  transform: translateY(-6px);
+
+  border-color: rgba(232,184,109,0.35);
+
+  box-shadow: 0 16px 50px var(--glow);
+
+}
+
+.cert-icon {
+
+  font-size: 3rem;
+
+  margin-bottom: 16px;
+
+}
+
+.cert-card h3 {
+
+  font-family: var(--font-head);
+
+  font-size: 1.15rem;
+
+  margin-bottom: 8px;
+
+}
+
+.cert-org {
+
+  color: var(--accent);
+
+  font-weight: 600;
+
+  margin-bottom: 12px;
+
+}
+
+.cert-desc {
+
+  color: var(--text2);
+
+  font-size: 0.9rem;
+
+  line-height: 1.6;
+
+  margin-bottom: 18px;
+
+}
+
+.cert-btn {
+
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  background: var(--accent);
+
+  color: #0a0a0f;
+
+  border-radius: var(--radius-sm);
+
+  font-weight: 700;
+
+  font-family: var(--font-head);
+
+  transition: all var(--transition);
+
+}
+
+.cert-btn:hover {
+
+  transform: scale(1.05);
+
+}
+
+@media (max-width: 900px) {
+
+  .cert-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+
 /* ===== 11. CONTACT ===== */
 .contact-section { background: var(--bg2); }
 
