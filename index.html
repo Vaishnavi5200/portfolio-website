@@ -1,607 +1,798 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+
+<html data-theme="dark" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vaishnavi Dwivedi — Frontend Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Primary SEO -->
+<title>Vaishnavi Dwivedi | Full-Stack MERN Developer</title>
+<meta content="Portfolio of Vaishnavi Dwivedi, a full-stack MERN developer building CareerOS and practical web applications using React, Node.js, Express.js and MongoDB." name="description"/>
+<meta content="Vaishnavi Dwivedi, full-stack developer, MERN stack, React, Node.js, Express, MongoDB, CareerOS, PlacementTrack Pro" name="keywords"/>
+<meta content="Vaishnavi Dwivedi" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://vaishnavi5200.github.io/portfolio-website/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="Vaishnavi Dwivedi | Full-Stack MERN Developer" property="og:title"/>
+<meta content="Full-stack MERN developer building CareerOS — a career-management platform for students. Open to internships." property="og:description"/>
+<meta content="https://vaishnavi5200.github.io/portfolio-website/" property="og:url"/>
+<meta content="Vaishnavi Dwivedi Portfolio" property="og:site_name"/>
+<!-- Twitter Card -->
+<meta content="summary" name="twitter:card"/>
+<meta content="Vaishnavi Dwivedi | Full-Stack MERN Developer" name="twitter:title"/>
+<meta content="Full-stack MERN developer building CareerOS — a career-management platform for students." name="twitter:description"/>
+<!-- Theme color -->
+<meta content="#0d0d14" name="theme-color"/>
+<!-- Fonts: Manrope (headings) + Inter (body) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<!-- Structured Data: Person -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vaishnavi Dwivedi",
+    "url": "https://vaishnavi5200.github.io/portfolio-website/",
+    "sameAs": [
+      "https://github.com/Vaishnavi5200",
+      "https://www.linkedin.com/in/vaishnavi-dwivedi-384773390"
+    ],
+    "jobTitle": "Full-Stack MERN Developer",
+    "description": "B.Tech CSE student and full-stack MERN developer building CareerOS.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+<!-- Structured Data: WebSite -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Vaishnavi Dwivedi Portfolio",
+    "url": "https://vaishnavi5200.github.io/portfolio-website/"
+  }
+  </script>
 </head>
 <body>
+<!-- ===== NAVBAR ===== -->
+<nav aria-label="Main navigation" class="navbar" id="navbar" role="navigation">
+<a aria-label="Vaishnavi Dwivedi — home" class="nav-logo" href="#hero">VD<span class="accent">.</span></a>
+<ul class="nav-links" id="navLinks" role="list"><li><a class="nav-link" data-section="hero" href="#hero">Home</a></li><li><a class="nav-link" data-section="work" href="#work">Projects</a></li><li><a class="nav-link" data-section="skills" href="#skills">Skills</a></li><li><a class="nav-link" data-section="careeros" href="#careeros">CareerOS</a></li><li><a class="nav-link" data-section="about" href="#about">About</a></li><li><a class="nav-link" data-section="journey" href="#journey">Journey</a></li><li><a class="nav-link" data-section="contact" href="#contact">Contact</a></li></ul>
+<div class="nav-actions">
 
-  <!-- ===== CURSOR (decorative dot that follows your mouse) ===== -->
-  <div class="cursor" id="cursor"></div>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <a href="#hero" class="nav-logo">VD<span class="accent">.</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#journey" class="nav-link">Journey</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#certifications" class="nav-link">Certifications</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
-        <span class="theme-icon" id="themeIcon">☀️</span>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero" id="hero">
-    <!-- Background decorations -->
-    <div class="hero-grid"></div>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-
-    <div class="hero-body">
-      <div class="hero-text">
-        <span class="hero-greeting fade-in">Hii Everybody! </span>
-        <h1 class="hero-name fade-in d1">
-          I'm <span class="accent">Vaishnavi</span><br/>Dwivedi
-        </h1>
-        <p class="hero-role fade-in d2">
-          <span id="typewriter"></span><span class="blink-cursor">|</span>
-        </p>
-        <p class="hero-location fade-in d3">📍 Lucknow, Uttar Pradesh, India</p>
-        <div class="hero-cta fade-in d4">
-          <a href="#projects" class="btn-primary">See My Work ↓</a>
-          <a href="#contact" class="btn-ghost">Let's Connect</a>
-        </div>
-        <div class="hero-pills fade-in d5">
-          <a href="https://github.com/Vaishnavi5200" target="_blank" rel="noopener" class="pill">🐙 GitHub</a>
-          <a href="https://www.linkedin.com/in/vaishnavi-dwivedi-384773390" target="_blank" rel="noopener" class="pill">💼 LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="hero-visual fade-in d2">
-        <div class="avatar-wrap">
-          <div class="avatar-ring-outer"></div>
-          <div class="avatar-ring-inner"></div>
-          <div class="avatar-core">
-            <span>👩‍💻</span>
-          </div>
-          <!-- Floating skill bubbles -->
-          <div class="bubble b1">HTML</div>
-          <div class="bubble b2">CSS</div>
-          <div class="bubble b3">JS</div>
-          <div class="bubble b4">⚛️ Next</div>
-        </div>
-      </div>
-    </div>
-
-    <a href="#about" class="scroll-down" aria-label="Scroll down">
-      <span class="scroll-dot"></span>
-    </a>
-  </section>
-
-  <!-- ===== ABOUT SECTION ===== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-eyebrow">WHO I AM</div>
-      <h2 class="section-title">About <span class="accent">Me</span></h2>
-
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p>I'm a <strong>first-year B.Tech CSE student</strong> with a deep love for building things on the web. I started with simple HTML pages and haven't stopped since.</p>
-          <p>What drives me is that moment when code becomes a real, working experience someone can see and touch. I'm constantly learning, experimenting, and levelling up my craft.</p>
-          <p>I'm currently exploring <span class="accent"><strong>React.js</strong></span> and looking for internship opportunities where I can grow and contribute.</p>
-          <div class="info-chips">
-            <span class="chip">🎓 1st Year B.Tech CSE</span>
-            <span class="chip">🌱 Learning React.js</span>
-            <span class="chip">🎯 Seeking Internship</span>
-            <span class="chip">💡 Open to Collaborate</span>
-          </div>
-        </div>
-
-        <div class="code-window reveal d1">
-          <div class="cw-header">
-            <span class="cw-dot red"></span>
-            <span class="cw-dot yellow"></span>
-            <span class="cw-dot green"></span>
-            <span class="cw-filename">about_me.js</span>
-          </div>
-          <div class="cw-body">
-<pre><code><span class="c-kw">const</span> <span class="c-var">me</span> = {
-  <span class="c-key">name</span>: <span class="c-str">"Vaishnavi Dwivedi"</span>,
-  <span class="c-key">role</span>: <span class="c-str">"Frontend Developer"</span>,
-  <span class="c-key">year</span>: <span class="c-str">"B.Tech CSE, 1st Year"</span>,
-  <span class="c-key">from</span>: <span class="c-str">"Lucknow, India"</span>,
-  <span class="c-key">stack</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
-  <span class="c-key">learning</span>: <span class="c-str">"React.js 🔥"</span>,
-  <span class="c-key">goal</span>: <span class="c-str">"Land my first internship"</span>,
-  <span class="c-key">status</span>: <span class="c-str">"Available ✅"</span>
-};</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== JOURNEY SECTION ===== -->
-  <section class="section journey-section" id="journey">
-    <div class="container">
-      <div class="section-eyebrow">MY STORY</div>
-      <h2 class="section-title">Learning <span class="accent">Journey</span></h2>
-
-      <div class="timeline">
-
-        <div class="tl-item reveal">
-          <div class="tl-marker">
-            <span class="tl-num">01</span>
-          </div>
-          <div class="tl-card">
-            <div class="tl-year">2023</div>
-            <h3>B.Tech Begins 🎓</h3>
-            <p>Joined engineering with stars in my eyes. Got introduced to C, algorithms, and the magic of making computers do things.</p>
-          </div>
-        </div>
-
-        <div class="tl-item reveal d1">
-          <div class="tl-marker">
-            <span class="tl-num">02</span>
-          </div>
-          <div class="tl-card">
-            <div class="tl-year">Early 2024</div>
-            <h3>Hello, Web Dev! 🌐</h3>
-            <p>Discovered HTML & CSS. Realised I could build things that look amazing in a browser. Made my first webpage — ugly, but mine.</p>
-          </div>
-        </div>
-
-        <div class="tl-item reveal d2">
-          <div class="tl-marker">
-            <span class="tl-num">03</span>
-          </div>
-          <div class="tl-card">
-            <div class="tl-year">Mid 2024</div>
-            <h3>First Real Project 🛒</h3>
-            <p>Cloned Amazon's homepage with HTML & CSS. Tackled complex layouts, navigation, and responsive grids for the first time.</p>
-          </div>
-        </div>
-
-        <div class="tl-item reveal d3">
-          <div class="tl-marker">
-            <span class="tl-num">04</span>
-          </div>
-          <div class="tl-card">
-            <div class="tl-year">2025</div>
-            <h3>JavaScript & GitHub ⚡</h3>
-            <p>Added JS to the mix. Learned version control, started pushing code to GitHub, and hosted projects live on the internet.</p>
-          </div>
-        </div>
-
-        <div class="tl-item reveal d4">
-          <div class="tl-marker active">
-            <span class="tl-num">05</span>
-          </div>
-          <div class="tl-card active-card">
-            <div class="tl-year">Now 🔥</div>
-            <h3>React.js Mode Activated ⚛️</h3>
-            <p>Exploring React — components, state, props. Building interactive UIs and getting ready to take on the modern web.</p>
-            <span class="current-badge">Currently Here</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS SECTION ===== -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-eyebrow">WHAT I KNOW</div>
-      <h2 class="section-title">My <span class="accent">Skills</span></h2>
-
-      <div class="skills-grid">
-
-        <div class="skill-card reveal">
-          <div class="sk-top">
-            <span class="sk-icon">🌐</span>
-            <span class="sk-pct">85%</span>
-          </div>
-          <h3 class="sk-name">HTML5</h3>
-          <p class="sk-desc">Semantic markup, forms, accessibility</p>
-          <div class="sk-bar"><div class="sk-fill" style="--w:85%"></div></div>
-        </div>
-
-        <div class="skill-card reveal d1">
-          <div class="sk-top">
-            <span class="sk-icon">🎨</span>
-            <span class="sk-pct">80%</span>
-          </div>
-          <h3 class="sk-name">CSS3</h3>
-          <p class="sk-desc">Flexbox, Grid, animations, responsive</p>
-          <div class="sk-bar"><div class="sk-fill" style="--w:80%"></div></div>
-        </div>
-
-        <div class="skill-card reveal d2">
-          <div class="sk-top">
-            <span class="sk-icon">⚡</span>
-            <span class="sk-pct">60%</span>
-          </div>
-          <h3 class="sk-name">JavaScript</h3>
-          <p class="sk-desc">DOM, events, functions, fetch</p>
-          <div class="sk-bar"><div class="sk-fill" style="--w:60%"></div></div>
-        </div>
-
-        <div class="skill-card reveal d3">
-          <div class="sk-top">
-            <span class="sk-icon">🐙</span>
-            <span class="sk-pct">70%</span>
-          </div>
-          <h3 class="sk-name">Git & GitHub</h3>
-          <p class="sk-desc">Version control, repos, deployment</p>
-          <div class="sk-bar"><div class="sk-fill" style="--w:70%"></div></div>
-        </div>
-
-        <div class="skill-card reveal d4">
-          <div class="sk-top">
-            <span class="sk-icon">📱</span>
-            <span class="sk-pct">75%</span>
-          </div>
-          <h3 class="sk-name">Responsive Design</h3>
-          <p class="sk-desc">Mobile-first, media queries</p>
-          <div class="sk-bar"><div class="sk-fill" style="--w:75%"></div></div>
-        </div>
-
-        <div class="skill-card reveal d5 learning-card">
-          <div class="sk-top">
-            <span class="sk-icon">⚛️</span>
-            <span class="sk-pct learning-label">Learning</span>
-          </div>
-          <h3 class="sk-name">React.js</h3>
-          <p class="sk-desc">Components, state, props — in progress</p>
-          <div class="sk-bar"><div class="sk-fill learning-fill" style="--w:25%"></div></div>
-          <span class="in-progress-tag">🌱 In Progress</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CERTIFICATIONS SECTION ===== -->
-<section class="section" id="certifications">
-  <div class="container">
-    <div class="section-eyebrow">MY ACHIEVEMENTS</div>
-    <h2 class="section-title">My <span class="accent">Certifications</span></h2>
-
-    <div class="cert-grid">
-
-      <div class="cert-card reveal">
-        <div class="cert-icon">🏆</div>
-        <h3>Responsive Web Design</h3>
-        <p class="cert-org">freeCodeCamp</p>
-        <p class="cert-desc">
-          Successfully completed the Responsive Web Design Developer Certification representing approximately 300 hours of coursework and projects.
-        </p>
-        <a href="https://freecodecamp.org/certification/fcc-edbc88ad-9d21-48f0-a6a0-5cc085c0dafb/responsive-web-design-v9" target="_blank" class="cert-btn">
-          View Credential ↗
-        </a>
-      </div>
-
-      <div class="cert-card reveal d1">
-        <div class="cert-icon">🎖️</div>
-        <h3>CSS Certificate</h3>
-        <p class="cert-org">HackerRank</p>
-        <p class="cert-desc">
-          Demonstrated proficiency in CSS fundamentals, Flexbox, layouts, styling, and responsive design concepts.
-        </p>
-        <a href="https://www.hackerrank.com/certificates/445ad42b439e" target="_blank" class="cert-btn">
-          View Credential ↗
-        </a>
-      </div>
-
-      <div class="cert-card reveal d2">
-  <div class="cert-icon">⚡</div>
-  <h3>JavaScript (Basic)</h3>
-  <p class="cert-org">HackerRank</p>
-  <p class="cert-desc">
-    Earned the HackerRank JavaScript (Basic) Certification by demonstrating proficiency in JavaScript fundamentals, functions, variables, loops, arrays, objects, and problem-solving concepts.
-  </p>
-  <a href="https://www.hackerrank.com/certificates/78253941b0f4" target="_blank" class="cert-btn">
-    View Credential ↗
-  </a>
+<a aria-label="Contact Vaishnavi" class="nav-resume" href="#contact" id="resumeBtn">Let's Talk</a>
+<button aria-label="Toggle colour theme" class="theme-btn" id="themeBtn" title="Toggle theme">
+<span aria-hidden="true" class="theme-icon" id="themeIcon">☀️</span>
+</button>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation menu" class="hamburger" id="hamburger">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</button>
 </div>
-    </div>
-  </div>
-</section>
+</nav>
+<main>
+<!-- ===== HERO ===== -->
 
-  <!-- ===== PROJECTS SECTION ===== -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-eyebrow">WHAT I'VE BUILT</div>
-      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+<!-- ===== FEATURED PRODUCT — CAREEROS ===== -->
 
-      <div class="projects-grid">
+<!-- ===== SELECTED WORK ===== -->
 
-        <!-- Project 1: Amazon Clone -->
-        <article class="proj-card reveal">
-          <div class="proj-preview">
-            <div class="proj-emoji">🛒</div>
-            <div class="proj-hover-links">
-              <a href="https://vaishnavi5200.github.io/amazon-clone-html-css/" target="_blank" rel="noopener" class="ph-btn">Live ↗</a>
-              <a href="https://github.com/Vaishnavi5200/amazon-clone-html-css" target="_blank" rel="noopener" class="ph-btn">Code ↗</a>
-            </div>
-          </div>
-          <div class="proj-body">
-            <div class="proj-tags">
-              <span class="ptag">HTML</span>
-              <span class="ptag">CSS</span>
-            </div>
-            <h3 class="proj-title">Amazon Clone</h3>
-            <p class="proj-desc">A pixel-perfect front-end recreation of Amazon's homepage — complete with navigation bar, hero banners, product grid, and footer. Practiced complex layouts and responsive CSS.</p>
-            <div class="proj-links">
-              <a href="https://vaishnavi5200.github.io/amazon-clone-html-css/" target="_blank" rel="noopener" class="plink">🌐 Live Demo</a>
-              <a href="https://github.com/Vaishnavi5200/amazon-clone-html-css" target="_blank" rel="noopener" class="plink">💻 Source Code</a>
-            </div>
-          </div>
-        </article>
+<!-- ===== TECHNICAL CAPABILITIES ===== -->
 
-        <article class="proj-card reveal d1">
-  <div class="proj-preview">
-    <div class="proj-emoji">💰</div>
-    <div class="proj-hover-links">
-      <a href="https://vaishnavi5200.github.io/expense-tracker/" target="_blank" class="ph-btn">Live ↗</a>
-      <a href="https://github.com/Vaishnavi5200/expense-tracker" target="_blank" class="ph-btn">Code ↗</a>
-    </div>
-  </div>
+<!-- ===== CERTIFICATIONS ===== -->
 
-  <div class="proj-body">
-    <div class="proj-tags">
-      <span class="ptag">HTML</span>
-      <span class="ptag">CSS</span>
-      <span class="ptag">JavaScript</span>
-    </div>
+<!-- ===== ABOUT ===== -->
 
-    <h3 class="proj-title">Expense Tracker</h3>
+<!-- ===== DEVELOPMENT JOURNEY ===== -->
 
-    <p class="proj-desc">
-      A responsive Expense Tracker built using HTML, CSS and JavaScript.
-      Users can add income and expenses, track balances in real time,
-      and manage transaction history.
-    </p>
+<!-- ===== GITHUB ACTIVITY ===== -->
 
-    <div class="proj-links">
-      <a href="https://vaishnavi5200.github.io/expense-tracker/" target="_blank" class="plink">🌐 Live Demo</a>
-      <a href="https://github.com/Vaishnavi5200/expense-tracker" target="_blank" class="plink">💻 Source Code</a>
-    </div>
-  </div>
+<!-- ===== CONTACT ===== -->
+
+<section aria-label="Introduction" class="hero" id="hero">
+<div aria-hidden="true" class="hero-bg-grid"></div>
+<div class="hero-body">
+<div class="hero-text">
+<div aria-hidden="true" class="hero-eyebrow fade-in">
+<span aria-hidden="true" class="eyebrow-dot"></span>
+          FULL-STACK MERN DEVELOPER · PRODUCT BUILDER
+        </div>
+<h1 class="hero-headline fade-in d1">I build practical software for student careers.</h1>
+<p class="hero-sub fade-in d2">I'm <strong>Vaishnavi Dwivedi</strong>, a full-stack MERN developer building responsive, secure and scalable web applications. My current focus is <strong>CareerOS</strong>—an evolving platform for placement tracking, DSA preparation and career growth.</p>
+<div aria-label="Current status" class="hero-status fade-in d3">
+<span aria-hidden="true" class="status-dot"></span>
+          Currently building CareerOS
+        </div>
+<div class="hero-cta fade-in d4">
+<a class="btn-primary" href="#work">View Projects</a>
+<a class="btn-ghost" href="https://placementtrack-pro.vercel.app/" rel="noopener noreferrer" target="_blank">Explore CareerOS <svg aria-hidden="true" class="btn-arrow" fill="none" height="14" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="14"><path d="M7 17L17 7M17 7H7M17 7v10"></path></svg>
+</a>
+</div>
+<div class="hero-links fade-in d5">
+<a aria-label="GitHub profile" class="hero-link" href="https://github.com/Vaishnavi5200" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+            GitHub
+          </a>
+<a aria-label="LinkedIn profile" class="hero-link" href="https://www.linkedin.com/in/vaishnavi-dwivedi-384773390" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+            LinkedIn
+          </a>
+<a aria-label="Email Vaishnavi" class="hero-link hero-link-resume" href="mailto:dwivedivaishnavi5200@gmail.com" id="heroResumeBtn">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"></path></svg> Email Me</a>
+</div>
+</div>
+<!-- Product mockup — CSS browser frame -->
+<div aria-label="PlacementTrack Pro dashboard preview" class="hero-visual fade-in d2" role="img">
+<div class="browser-frame">
+<div aria-hidden="true" class="browser-chrome">
+<div class="browser-dots">
+<span class="bdot red"></span>
+<span class="bdot yellow"></span>
+<span class="bdot green"></span>
+</div>
+<div class="browser-url">placementtrack-pro.vercel.app</div>
+</div>
+<div aria-hidden="true" class="browser-content">
+<!-- Dashboard mockup -->
+<div class="mock-topbar">
+<div class="mock-logo-area">
+<span class="mock-logo-dot"></span>
+<span class="mock-app-name">PlacementTrack Pro</span>
+</div>
+<div class="mock-nav-items">
+<span class="mock-nav active">Dashboard</span>
+<span class="mock-nav">Applications</span>
+<span class="mock-nav">DSA</span>
+</div>
+</div>
+<div class="mock-body">
+<div class="mock-greeting">
+<p class="mock-hello">Good morning, Vaishnavi</p>
+<p class="mock-date">Track your progress</p>
+</div>
+<div class="mock-stat-row">
+<div class="mock-stat">
+<span class="mock-stat-num accent">12</span>
+<span class="mock-stat-label">Applications</span>
+</div>
+<div class="mock-stat">
+<span class="mock-stat-num" style="color:#a78bfa">5</span>
+<span class="mock-stat-label">Follow-ups</span>
+</div>
+<div class="mock-stat">
+<span class="mock-stat-num" style="color:#34d399">48</span>
+<span class="mock-stat-label">DSA Solved</span>
+</div>
+<div class="mock-stat">
+<span class="mock-stat-num" style="color:#fb923c">7</span>
+<span class="mock-stat-label">Day Streak</span>
+</div>
+</div>
+<div class="mock-table-header">
+<span>Company</span>
+<span>Role</span>
+<span>Status</span>
+</div>
+<div class="mock-row">
+<span class="mock-company">Google</span>
+<span class="mock-role">SDE Intern</span>
+<span class="mock-badge applied">Applied</span>
+</div>
+<div class="mock-row">
+<span class="mock-company">Razorpay</span>
+<span class="mock-role">Frontend Intern</span>
+<span class="mock-badge interview">Interview</span>
+</div>
+<div class="mock-row">
+<span class="mock-company">Groww</span>
+<span class="mock-role">Full-Stack Intern</span>
+<span class="mock-badge offer">Offer</span>
+</div>
+<div class="mock-dsa-strip">
+<span class="mock-dsa-label">Today's DSA</span>
+<span class="mock-dsa-topic">Two Pointers · Medium</span>
+<span class="mock-dsa-count">3 solved today</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a aria-label="Scroll to next section" class="scroll-hint" href="#careeros">
+<svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M12 5v14M5 12l7 7 7-7"></path></svg>
+</a>
+</section><section aria-labelledby="work-heading" class="section" id="work">
+<div class="container">
+<div class="section-eyebrow">SELECTED WORK</div>
+<h2 class="section-title" id="work-heading">Projects</h2>
+<!-- Flagship project -->
+<article aria-label="PlacementTrack Pro — flagship project" class="flagship-card reveal">
+<div class="flagship-badge">Flagship Project</div>
+<div class="flagship-body">
+<div class="flagship-info">
+<div class="proj-tags">
+<span class="ptag">React.js</span>
+<span class="ptag">Node.js</span>
+<span class="ptag">Express.js</span>
+<span class="ptag">MongoDB</span>
+<span class="ptag">JWT</span>
+<span class="ptag">Vite</span>
+</div>
+<h3 class="flagship-title">PlacementTrack Pro</h3>
+<p class="flagship-problem">
+              Students managing applications and DSA prep across disconnected spreadsheets lose visibility into their progress and lose track of follow-ups.
+            </p>
+<div class="flagship-features">
+<h4>Key Features</h4>
+<ul role="list">
+<li>Authenticated multi-user system with JWT</li>
+<li>Application tracker with status pipeline</li>
+<li>Follow-up management with reminders</li>
+<li>DSA problem tracker with difficulty and topic filters</li>
+<li>Revision counter and daily streak system</li>
+<li>Responsive dashboard with search and filtering</li>
+<li>Deployed on Vercel (frontend) + Railway (backend)</li>
+</ul>
+</div>
+<div class="proj-links">
+<a class="btn-primary btn-sm" href="https://placementtrack-pro.vercel.app/" rel="noopener noreferrer" target="_blank">
+                Live Demo
+                <svg aria-hidden="true" class="btn-arrow" fill="none" height="13" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M7 17L17 7M17 7H7M17 7v10"></path></svg>
+</a>
+<a class="btn-ghost btn-sm" href="https://github.com/Vaishnavi5200/Placement-tracker" rel="noopener noreferrer" target="_blank">Source Code</a>
+</div>
+</div>
+<div aria-hidden="true" class="flagship-visual">
+<div class="mini-browser">
+<div class="mini-chrome">
+<span class="mini-dot"></span>
+<span class="mini-dot"></span>
+<span class="mini-dot"></span>
+<span class="mini-url">placementtrack-pro.vercel.app</span>
+</div>
+<div class="mini-content">
+<div class="mini-sidebar">
+<div class="mini-nav-item act"></div>
+<div class="mini-nav-item"></div>
+<div class="mini-nav-item"></div>
+<div class="mini-nav-item"></div>
+</div>
+<div class="mini-main">
+<div class="mini-stat-row">
+<div class="mini-stat-card"></div>
+<div class="mini-stat-card" style="background:rgba(124,92,252,0.2)"></div>
+<div class="mini-stat-card" style="background:rgba(52,211,153,0.15)"></div>
+</div>
+<div class="mini-table">
+<div class="mini-tr"></div>
+<div class="mini-tr"></div>
+<div class="mini-tr"></div>
+<div class="mini-tr"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
-
-
+<!-- Other projects grid -->
+<div class="projects-grid">
+<article class="proj-card reveal d1">
+<div class="proj-preview proj-preview-weather">
+<div aria-hidden="true" class="proj-visual-inner">
+<svg fill="none" height="40" opacity="0.6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" width="40"><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path><circle cx="12" cy="12" r="5"></circle></svg>
+<svg fill="none" height="32" opacity="0.4" stroke="currentColor" stroke-width="1.5" style="margin-left:-8px" viewbox="0 0 24 24" width="32"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"></path></svg>
+</div>
+<div aria-label="Project links" class="proj-hover-links">
+<a class="ph-btn" href="https://vaishnavi5200.github.io/weather-app/" rel="noopener noreferrer" target="_blank">Live ↗</a>
+<a class="ph-btn" href="https://github.com/Vaishnavi5200/weather-app" rel="noopener noreferrer" target="_blank">Code ↗</a>
+</div>
+</div>
+<div class="proj-body">
+<div class="proj-tags">
+<span class="ptag">HTML</span>
+<span class="ptag">CSS</span>
+<span class="ptag">JavaScript</span>
+<span class="ptag">REST API</span>
+</div>
+<h3 class="proj-title">Weather App</h3>
+<p class="proj-desc">City-based weather lookup using the OpenWeatherMap API. Returns current conditions, temperature and weather description in real time.</p>
+<div class="proj-links">
+<a class="plink" href="https://vaishnavi5200.github.io/weather-app/" rel="noopener noreferrer" target="_blank">Live Demo →</a>
+<a class="plink" href="https://github.com/Vaishnavi5200/weather-app" rel="noopener noreferrer" target="_blank">Source Code →</a>
+</div>
+</div>
+</article>
 <article class="proj-card reveal d2">
-  <div class="proj-preview">
-    <div class="proj-emoji">🌦️</div>
-    <div class="proj-hover-links">
-      <a href="https://vaishnavi5200.github.io/weather-app/" target="_blank" class="ph-btn">Live ↗</a>
-      <a href="https://github.com/Vaishnavi5200/weather-app" target="_blank" class="ph-btn">Code ↗</a>
-    </div>
-  </div>
-
-  <div class="proj-body">
-    <div class="proj-tags">
-      <span class="ptag">HTML</span>
-      <span class="ptag">CSS</span>
-      <span class="ptag">JavaScript</span>
-      <span class="ptag">API</span>
-    </div>
-
-    <h3 class="proj-title">Weather App</h3>
-
-    <p class="proj-desc">
-      A modern weather application built using HTML, CSS, JavaScript,
-      and OpenWeatherMap API. Users can search any city and view
-      real-time weather information.
-    </p>
-
-    <div class="proj-links">
-      <a href="https://vaishnavi5200.github.io/weather-app/" target="_blank" class="plink">🌐 Live Demo</a>
-      <a href="https://github.com/Vaishnavi5200/weather-app" target="_blank" class="plink">💻 Source Code</a>
-    </div>
-  </div>
+<div class="proj-preview proj-preview-expense">
+<div aria-hidden="true" class="proj-visual-inner">
+<svg fill="none" height="44" opacity="0.6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" width="44"><rect height="14" rx="2" width="20" x="2" y="5"></rect><path d="M2 10h20"></path></svg>
+</div>
+<div aria-label="Project links" class="proj-hover-links">
+<a class="ph-btn" href="https://vaishnavi5200.github.io/expense-tracker/" rel="noopener noreferrer" target="_blank">Live ↗</a>
+<a class="ph-btn" href="https://github.com/Vaishnavi5200/expense-tracker" rel="noopener noreferrer" target="_blank">Code ↗</a>
+</div>
+</div>
+<div class="proj-body">
+<div class="proj-tags">
+<span class="ptag">HTML</span>
+<span class="ptag">CSS</span>
+<span class="ptag">JavaScript</span>
+</div>
+<h3 class="proj-title">Expense Tracker</h3>
+<p class="proj-desc">Income and expense logger with real-time balance calculation and transaction history management. Built with vanilla JavaScript.</p>
+<div class="proj-links">
+<a class="plink" href="https://vaishnavi5200.github.io/expense-tracker/" rel="noopener noreferrer" target="_blank">Live Demo →</a>
+<a class="plink" href="https://github.com/Vaishnavi5200/expense-tracker" rel="noopener noreferrer" target="_blank">Source Code →</a>
+</div>
+</div>
 </article>
-
-<article class="proj-card reveal d4">
-    <div class="proj-preview">
-        <div class="proj-emoji">⚛️</div>
-
-        <div class="proj-hover-links">
-            <a href="https://react-todo-app-kappa-flax.vercel.app" target="_blank" class="ph-btn">Live</a>
-            <a href="https://github.com/Vaishnavi5200/react-todo-app" target="_blank" class="ph-btn">Code</a>
-        </div>
-    </div>
-
-    <div class="proj-body">
-        <div class="proj-tags">
-            <span class="ptag">React.js</span>
-            <span class="ptag">JavaScript</span>
-            <span class="ptag">Vite</span>
-            <span class="ptag">CSS</span>
-        </div>
-
-        <h3 class="proj-title">React Todo App</h3>
-
-        <p class="proj-desc">
-            A modern task management application built with React.js and Vite.
-            Users can add, delete, complete, and organize tasks through a clean and responsive interface.
-        </p>
-
-        <div class="proj-links">
-            <a href="https://react-todo-app-kappa-flax.vercel.app" target="_blank" class="plink">🌐 Live Demo</a>
-            <a href="https://github.com/Vaishnavi5200/react-todo-app" target="_blank" class="plink">💻 Source Code</a>
-        </div>
-    </div>
+<article class="proj-card reveal d3">
+<div class="proj-preview proj-preview-todo">
+<div aria-hidden="true" class="proj-visual-inner">
+<svg fill="none" height="40" opacity="0.6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" width="40"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg>
+</div>
+<div aria-label="Project links" class="proj-hover-links">
+<a class="ph-btn" href="https://react-todo-app-kappa-flax.vercel.app" rel="noopener noreferrer" target="_blank">Live ↗</a>
+<a class="ph-btn" href="https://github.com/Vaishnavi5200/react-todo-app" rel="noopener noreferrer" target="_blank">Code ↗</a>
+</div>
+</div>
+<div class="proj-body">
+<div class="proj-tags">
+<span class="ptag">React.js</span>
+<span class="ptag">Vite</span>
+<span class="ptag">JavaScript</span>
+</div>
+<h3 class="proj-title">React Todo App</h3>
+<p class="proj-desc">Task management application built with React.js. Add, complete and delete tasks through a clean, responsive component-based interface.</p>
+<div class="proj-links">
+<a class="plink" href="https://react-todo-app-kappa-flax.vercel.app" rel="noopener noreferrer" target="_blank">Live Demo →</a>
+<a class="plink" href="https://github.com/Vaishnavi5200/react-todo-app" rel="noopener noreferrer" target="_blank">Source Code →</a>
+</div>
+</div>
 </article>
-
-<article class="proj-card reveal d4">
-
-  <div class="proj-preview">
-    <div class="proj-emoji">💼</div>
-
-    <div class="proj-hover-links">
-      <a href="https://placement-tracker-v2.vercel.app" target="_blank" class="ph-btn">
-        Live Demo
-      </a>
-
-      <a href="https://github.com/Vaishnavi5200/Placement-tracker" target="_blank" class="ph-btn">
-        Code
-      </a>
-    </div>
-  </div>
-
-  <div class="proj-body">
-
-    <div class="proj-tags">
-      <span class="ptag">React.js</span>
-      <span class="ptag">JavaScript</span>
-      <span class="ptag">Vite</span>
-      <span class="ptag">Local Storage</span>
-    </div>
-
-    <h3 class="proj-title">PlacementTrack</h3>
-
-    <p class="proj-desc">
-      Developed a modern placement tracking web application that helps students
-      manage job applications, interview rounds, offers, and rejections in one
-      place. Features an interactive dashboard, responsive design, dark/light
-      mode, and local storage for seamless application management.
-    </p>
-
-    <div class="proj-links">
-      <a
-        href="https://placement-tracker-v2.vercel.app"
-        target="_blank"
-        class="plink"
-      >
-        🌐 Live Demo
-      </a>
-
-      <a
-        href="https://github.com/Vaishnavi5200/Placement-tracker"
-        target="_blank"
-        class="plink"
-      >
-        💻 Source Code
-      </a>
-    </div>
-
-  </div>
-
-</article>
-
-<article class="proj-card reveal d5">
-    <div class="proj-preview">
-        <div class="proj-emoji">🚀</div>
-    </div>
-
-    <div class="proj-body">
-        <div class="proj-tags">
-            <span class="ptag">React.js</span>
-            <span class="ptag">Learning</span>
-            <span class="ptag">In Progress</span>
-        </div>
-
-        <h3 class="proj-title">More Projects Coming Soon</h3>
-
-        <p class="proj-desc">
-            Currently learning React.js and building new real-world projects.
-            Upcoming projects will include modern frontend applications,
-            API integrations, and full-stack web development projects.
-        </p>
-
-        <div class="proj-links">
-            <span class="plink">🚧 Under Development</span>
-        </div>
-    </div>
-</article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT SECTION ===== -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="section-eyebrow">SAY HELLO</div>
-      <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
-      <p class="contact-intro">I'm always excited to talk about internships, collaborations, or just about web development. Reach out — I don't bite! 😄</p>
-
-      <div class="contact-grid">
-
-        <div class="contact-info reveal">
-          <div class="ci-item">
-            <span class="ci-icon">📍</span>
-            <div>
-              <strong>Location</strong>
-              <p>Lucknow, Uttar Pradesh, India</p>
-            </div>
-          </div>
-          <div class="ci-item">
-            <span class="ci-icon">🎓</span>
-            <div>
-              <strong>Education</strong>
-              <p>B.Tech CSE — 1st Year</p>
-            </div>
-          </div>
-          <div class="ci-item">
-            <span class="ci-icon">🟢</span>
-            <div>
-              <strong>Status</strong>
-              <p>Open to Internships</p>
-            </div>
-          </div>
-          <div class="contact-social-btns"> 
-            <a href="https://github.com/Vaishnavi5200" target="_blank" rel="noopener" class="csb github">🐙 GitHub</a>
-            <a href="https://www.linkedin.com/in/vaishnavi-dwivedi-384773390" target="_blank" rel="noopener" class="csb linkedin">💼 LinkedIn</a>
-          </div>
-        </div>
-
-        <div class="contact-form-box reveal d1">
-          <form id="contactForm" class="cform" novalidate>
-            <div class="cform-group">
-              <label for="cname">Your Name</label>
-              <input type="text" id="cname" name="name" placeholder="e.g. Priya Sharma" required />
-            </div>
-            <div class="cform-group">
-              <label for="cemail">Email Address</label>
-              <input type="email" id="cemail" name="email" placeholder="you@email.com" required />
-            </div>
-            <div class="cform-group">
-              <label for="csubject">Subject</label>
-              <input type="text" id="csubject" name="subject" placeholder="Internship / Collaboration / Hi!" />
-            </div>
-            <div class="cform-group">
-              <label for="cmessage">Message</label>
-              <textarea id="cmessage" name="message" rows="4" placeholder="Write your message here..." required></textarea>
-            </div>
-            <button type="submit" class="cform-submit" id="submitBtn">
-              <span id="submitText">Send Message 🚀</span>
-            </button>
-            <div class="cform-success" id="formSuccess">
-              ✅ Thanks! Connect on LinkedIn for a quick reply.
-            </div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="footer-logo">VD<span class="accent">.</span></span>
-      <p>Designed & Built by <strong>Vaishnavi Dwivedi</strong> with HTML, CSS & JS</p>
-      <p class="footer-copy">© 2025 Vaishnavi Dwivedi</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+</div>
+<!-- Earlier Builds -->
+<div class="earlier-builds reveal">
+<h3 class="earlier-label">Earlier Builds</h3>
+<p class="earlier-desc">Projects from early in my learning journey, included to show progression.</p>
+<div class="earlier-grid">
+<div class="early-card">
+<div class="early-title">Amazon Clone</div>
+<p class="early-desc">Front-end recreation of Amazon's homepage layout — practiced complex CSS layouts, navigation and responsive grids.</p>
+<div class="early-links">
+<a class="plink" href="https://vaishnavi5200.github.io/amazon-clone-html-css/" rel="noopener noreferrer" target="_blank">Live →</a>
+<a class="plink" href="https://github.com/Vaishnavi5200/amazon-clone-html-css" rel="noopener noreferrer" target="_blank">Code →</a>
+</div>
+<div class="early-stack">HTML · CSS</div>
+</div>
+</div>
+</div>
+</div>
+</section><section aria-labelledby="skills-heading" class="section skills-section" id="skills">
+<div class="container">
+<div class="section-eyebrow">TECHNICAL CAPABILITIES</div>
+<h2 class="section-title" id="skills-heading">What I work with</h2>
+<div class="skills-grid">
+<div class="skill-cat reveal">
+<h3 class="skill-cat-title">
+<svg aria-hidden="true" class="skill-cat-icon" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><rect height="14" rx="2" width="20" x="2" y="3"></rect><path d="M8 21h8M12 17v4"></path></svg>
+            Frontend
+          </h3>
+<div class="skill-pills">
+<span class="skill-pill">React.js</span>
+<span class="skill-pill">JavaScript (ES6+)</span>
+<span class="skill-pill">HTML5</span>
+<span class="skill-pill">CSS3</span>
+<span class="skill-pill">Responsive Design</span>
+<span class="skill-pill">Component Architecture</span>
+<span class="skill-pill">API Integration</span>
+<span class="skill-pill">Form Handling</span>
+<span class="skill-pill">State Management</span>
+</div>
+</div>
+<div class="skill-cat reveal d1">
+<h3 class="skill-cat-title">
+<svg aria-hidden="true" class="skill-cat-icon" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M5 12H3l9-9 9 9h-2M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
+            Backend
+          </h3>
+<div class="skill-pills">
+<span class="skill-pill">Node.js</span>
+<span class="skill-pill">Express.js</span>
+<span class="skill-pill">REST APIs</span>
+<span class="skill-pill">Authentication (JWT)</span>
+<span class="skill-pill">Authorization</span>
+<span class="skill-pill">CRUD Systems</span>
+<span class="skill-pill">Error Handling</span>
+<span class="skill-pill">Middleware</span>
+</div>
+</div>
+<div class="skill-cat reveal d2">
+<h3 class="skill-cat-title">
+<svg aria-hidden="true" class="skill-cat-icon" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            Database
+          </h3>
+<div class="skill-pills">
+<span class="skill-pill">MongoDB</span>
+<span class="skill-pill">Mongoose</span>
+<span class="skill-pill">Schema Design</span>
+<span class="skill-pill">Data Modelling</span>
+<span class="skill-pill">User-scoped Data</span>
+<span class="skill-pill">Database Relationships</span>
+</div>
+</div>
+<div class="skill-cat reveal d3">
+<h3 class="skill-cat-title">
+<svg aria-hidden="true" class="skill-cat-icon" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+            Tools &amp; Deployment
+          </h3>
+<div class="skill-pills">
+<span class="skill-pill">Git</span>
+<span class="skill-pill">GitHub</span>
+<span class="skill-pill">Vite</span>
+<span class="skill-pill">Postman</span>
+<span class="skill-pill">Vercel</span>
+<span class="skill-pill">Railway</span>
+</div>
+</div>
+<div class="skill-cat reveal d4">
+<h3 class="skill-cat-title">
+<svg aria-hidden="true" class="skill-cat-icon" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Engineering Practices
+          </h3>
+<div class="skill-pills">
+<span class="skill-pill">Reusable Components</span>
+<span class="skill-pill">Responsive UI</span>
+<span class="skill-pill">Clean Code</span>
+<span class="skill-pill">API Architecture</span>
+<span class="skill-pill">Debugging</span>
+<span class="skill-pill">Product Iteration</span>
+<span class="skill-pill">Version Control</span>
+</div>
+</div>
+</div>
+</div>
+</section><section aria-labelledby="careeros-heading" class="section careeros-section" id="careeros">
+<div class="container">
+<div class="section-eyebrow">FEATURED PRODUCT</div>
+<div class="careeros-header">
+<div>
+<h2 class="section-title" id="careeros-heading">
+            CareerOS
+            <span aria-label="Active development" class="active-dev-badge">Active Development</span>
+</h2>
+<p class="careeros-subtitle">From placement tracker to a focused career operating system for students.</p>
+</div>
+<div class="careeros-actions">
+<a class="btn-primary" href="https://placementtrack-pro.vercel.app/" rel="noopener noreferrer" target="_blank">
+            Open Live Product
+            <svg aria-hidden="true" class="btn-arrow" fill="none" height="14" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="14"><path d="M7 17L17 7M17 7H7M17 7v10"></path></svg>
+</a>
+<a class="btn-ghost" href="https://github.com/Vaishnavi5200/Placement-tracker" rel="noopener noreferrer" target="_blank">Source Code</a>
+</div>
+</div>
+<p class="careeros-desc reveal">
+        CareerOS is my evolving product vision for helping students manage applications, DSA preparation, interview readiness and long-term career progress from one unified dashboard. <strong>PlacementTrack Pro</strong> is the current working foundation of CareerOS.
+      </p>
+<div class="careeros-case-study">
+<div class="case-col reveal">
+<div class="case-block">
+<h3 class="case-label">Problem</h3>
+<p>Students manage applications, DSA progress, follow-ups and preparation across disconnected spreadsheets, notes and platforms. Nothing is connected, so nothing is trackable.</p>
+</div>
+<div class="case-block">
+<h3 class="case-label">Solution</h3>
+<p>CareerOS brings those workflows together into one structured system — one login, one dashboard, everything connected.</p>
+</div>
+</div>
+<div class="case-col reveal d1">
+<div class="case-block case-block-features">
+<h3 class="case-label">Currently Implemented</h3>
+<ul class="feature-list" role="list">
+<li>Secure JWT authentication</li>
+<li>Job and internship application tracking</li>
+<li>Follow-up management</li>
+<li>Placement dashboard overview</li>
+<li>DSA problem tracking</li>
+<li>Topic and difficulty management</li>
+<li>Revision tracking per problem</li>
+<li>Daily solving streak</li>
+<li>Search and filtering</li>
+<li>Responsive interface</li>
+<li>MongoDB data persistence</li>
+<li>Full CRUD workflows</li>
+</ul>
+</div>
+</div>
+<div class="case-col reveal d2">
+<div class="case-block">
+<h3 class="case-label">Product Evolution</h3>
+<ol class="evolution-list" role="list">
+<li>
+<span class="evo-num">01</span>
+<span>Placement tracking prototype</span>
+</li>
+<li>
+<span class="evo-num">02</span>
+<span>Full-stack MERN application</span>
+</li>
+<li>
+<span class="evo-num">03</span>
+<span>Authentication and persistent user data</span>
+</li>
+<li>
+<span class="evo-num">04</span>
+<span>DSA Tracker integration</span>
+</li>
+<li class="evo-current">
+<span class="evo-num active">05</span>
+<span>CareerOS product expansion <span class="evo-now">Now</span></span>
+</li>
+</ol>
+</div>
+<div class="case-block">
+<h3 class="case-label">Technology Stack</h3>
+<div class="tech-pill-row">
+<span class="tech-pill">React.js</span>
+<span class="tech-pill">Node.js</span>
+<span class="tech-pill">Express.js</span>
+<span class="tech-pill">MongoDB</span>
+<span class="tech-pill">Mongoose</span>
+<span class="tech-pill">JWT</span>
+<span class="tech-pill">Vercel</span>
+<span class="tech-pill">Railway</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section aria-labelledby="certs-heading" class="section certs-section" id="certifications">
+<div class="container">
+<div class="section-eyebrow">CREDENTIALS</div>
+<h2 class="section-title" id="certs-heading">Certifications</h2>
+<div class="cert-grid">
+<div class="cert-card reveal">
+<div aria-hidden="true" class="cert-icon-wrap">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"></path></svg>
+</div>
+<h3>Responsive Web Design</h3>
+<p class="cert-org">freeCodeCamp</p>
+<p class="cert-desc">Completed the Responsive Web Design Developer Certification — approximately 300 hours of coursework and projects covering semantic HTML, CSS, Flexbox, Grid and accessibility.</p>
+<a aria-label="View Responsive Web Design credential on freeCodeCamp" class="cert-btn" href="https://freecodecamp.org/certification/fcc-edbc88ad-9d21-48f0-a6a0-5cc085c0dafb/responsive-web-design-v9" rel="noopener noreferrer" target="_blank">
+            View Credential
+            <svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M7 17L17 7M17 7H7M17 7v10"></path></svg>
+</a>
+</div>
+<div class="cert-card reveal d1">
+<div aria-hidden="true" class="cert-icon-wrap">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+</div>
+<h3>CSS Certificate</h3>
+<p class="cert-org">HackerRank</p>
+<p class="cert-desc">Demonstrated proficiency in CSS fundamentals, Flexbox, layouts, styling and responsive design concepts through HackerRank's assessed certification.</p>
+<a aria-label="View CSS Certificate on HackerRank" class="cert-btn" href="https://www.hackerrank.com/certificates/445ad42b439e" rel="noopener noreferrer" target="_blank">
+            View Credential
+            <svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M7 17L17 7M17 7H7M17 7v10"></path></svg>
+</a>
+</div>
+<div class="cert-card reveal d2">
+<div aria-hidden="true" class="cert-icon-wrap">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+</div>
+<h3>JavaScript (Basic)</h3>
+<p class="cert-org">HackerRank</p>
+<p class="cert-desc">Earned by demonstrating proficiency in JavaScript fundamentals including functions, variables, loops, arrays, objects and problem-solving concepts.</p>
+<a aria-label="View JavaScript Basic Certificate on HackerRank" class="cert-btn" href="https://www.hackerrank.com/certificates/78253941b0f4" rel="noopener noreferrer" target="_blank">
+            View Credential
+            <svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M7 17L17 7M17 7H7M17 7v10"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section><section aria-labelledby="about-heading" class="section about-section" id="about">
+<div class="container">
+<div class="section-eyebrow">ABOUT</div>
+<h2 class="section-title" id="about-heading">Who I am</h2>
+<div class="about-grid">
+<div class="about-copy reveal">
+<p>I'm Vaishnavi Dwivedi, a B.Tech Computer Science Engineering student and full-stack MERN developer from Uttar Pradesh, India.</p>
+<p>I started my development journey in August 2025 and progressed from responsive frontend development to building full-stack applications with React, Node.js, Express.js and MongoDB.</p>
+<p>My current focus is CareerOS, an evolving platform for placement preparation, application management and technical growth. I'm open to software-development internships where I can contribute, learn and grow with an experienced team.</p>
+<div class="info-cards">
+<div class="info-card">
+<span class="info-card-label">Education</span>
+<span class="info-card-value">B.Tech Computer Science Engineering</span>
+</div>
+<div class="info-card">
+<span class="info-card-label">Location</span>
+<span class="info-card-value">Uttar Pradesh, India</span>
+</div>
+<div class="info-card">
+<span class="info-card-label">Focus</span>
+<span class="info-card-value">Full-Stack MERN Development</span>
+</div>
+<div class="info-card">
+<span class="info-card-label">Status</span>
+<span class="info-card-value info-card-open">
+<span aria-hidden="true" class="status-dot"></span>
+                Open to internships
+              </span>
+</div>
+<div class="info-card info-card-wide">
+<span class="info-card-label">Currently building</span>
+<span class="info-card-value">CareerOS — career management platform for students</span>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="about-code reveal d1">
+<div class="code-window">
+<div class="cw-header">
+<span class="cw-dot red"></span>
+<span class="cw-dot yellow"></span>
+<span class="cw-dot green"></span>
+<span class="cw-filename">vaishnavi.js</span>
+</div>
+<div class="cw-body">
+<pre><code><span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-key">name</span>:    <span class="c-str">"Vaishnavi Dwivedi"</span>,
+  <span class="c-key">role</span>:    <span class="c-str">"Full-Stack MERN Developer"</span>,
+  <span class="c-key">degree</span>: <span class="c-str">"B.Tech CSE"</span>,
+  <span class="c-key">from</span>:   <span class="c-str">"Uttar Pradesh, India"</span>,
+  <span class="c-key">stack</span>: [
+    <span class="c-str">"React"</span>, <span class="c-str">"Node.js"</span>,
+    <span class="c-str">"Express"</span>, <span class="c-str">"MongoDB"</span>
+  ],
+  <span class="c-key">building</span>: <span class="c-str">"CareerOS"</span>,
+  <span class="c-key">open_to</span>: <span class="c-str">"Internships"</span>,
+  <span class="c-key">status</span>:   <span class="c-str">"Available ✓"</span>
+};</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section aria-labelledby="journey-heading" class="section journey-section" id="journey">
+<div class="container">
+<div class="section-eyebrow">DEVELOPMENT JOURNEY</div>
+<h2 class="section-title" id="journey-heading">How I got here</h2>
+<div class="timeline" role="list"><div class="tl-item reveal" role="listitem"><div aria-hidden="true" class="tl-marker"><span class="tl-num">01</span></div><div class="tl-card"><div class="tl-year">August 2025</div><h3>Web Development Foundations</h3><p>Started with semantic HTML, CSS and responsive design, then built small projects to understand layout, accessibility and browser behaviour.</p></div></div><div class="tl-item reveal d1" role="listitem"><div aria-hidden="true" class="tl-marker"><span class="tl-num">02</span></div><div class="tl-card"><div class="tl-year">Late 2025</div><h3>JavaScript and React</h3><p>Moved from static pages to interactive interfaces using JavaScript, DOM APIs, component-based development, state and reusable UI patterns.</p></div></div><div class="tl-item reveal d2" role="listitem"><div aria-hidden="true" class="tl-marker"><span class="tl-num">03</span></div><div class="tl-card"><div class="tl-year">2026</div><h3>Full-Stack MERN Development</h3><p>Expanded into Node.js, Express.js, MongoDB, REST APIs, authentication and deployment while building complete end-to-end applications.</p></div></div><div class="tl-item reveal d3" role="listitem"><div aria-hidden="true" class="tl-marker"><span class="tl-num">04</span></div><div class="tl-card"><div class="tl-year">2026</div><h3>PlacementTrack Pro</h3><p>Built and deployed a placement-management platform with JWT authentication, application tracking, follow-up workflows and persistent user data.</p></div></div><div class="tl-item reveal d4" role="listitem"><div aria-hidden="true" class="tl-marker active"><span class="tl-num">05</span></div><div class="tl-card active-card"><div class="tl-year">Now</div><h3>CareerOS</h3><p>Evolving PlacementTrack Pro into CareerOS, one practical feature at a time—starting with DSA tracking and moving toward resume and interview workflows.</p><span class="current-badge">Currently Here</span></div></div></div>
+</div>
+</section><section aria-labelledby="github-heading" class="section github-section" id="github">
+<div class="container">
+<div class="section-eyebrow">DEVELOPMENT ACTIVITY</div>
+<h2 class="section-title" id="github-heading">Building in public, one feature at a time.</h2>
+<div class="github-body reveal">
+<p class="github-desc">My recent work focuses on improving PlacementTrack Pro through practical product iterations — authentication, application workflows, DSA tracking and deployment improvements. Every commit is part of evolving the product toward CareerOS.</p>
+<div class="github-card">
+<div aria-hidden="true" class="github-card-top">
+<svg class="gh-icon" fill="currentColor" height="36" viewbox="0 0 24 24" width="36"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+<div class="github-profile-info">
+<span class="github-username">Vaishnavi5200</span>
+<span class="github-handle">github.com/Vaishnavi5200</span>
+</div>
+</div>
+<p class="github-note">View my repositories, explore PlacementTrack Pro's source code and follow the CareerOS development.</p>
+<div class="github-btns">
+<a class="btn-primary" href="https://github.com/Vaishnavi5200" rel="noopener noreferrer" target="_blank">
+              View GitHub Profile
+              <svg aria-hidden="true" class="btn-arrow" fill="none" height="14" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="14"><path d="M7 17L17 7M17 7H7M17 7v10"></path></svg>
+</a>
+<a class="btn-ghost" href="https://github.com/Vaishnavi5200/Placement-tracker" rel="noopener noreferrer" target="_blank">Explore Repositories</a>
+</div>
+</div>
+</div>
+</div>
+</section><section aria-labelledby="contact-heading" class="section contact-section" id="contact">
+<div class="container">
+<div class="section-eyebrow">GET IN TOUCH</div>
+<h2 class="section-title" id="contact-heading">Let's build something meaningful.</h2>
+<p class="contact-intro">I'm open to software-development internships, project collaborations and opportunities to contribute to real products.</p>
+<div class="contact-grid">
+<div class="contact-info reveal">
+<div class="ci-item">
+<span aria-hidden="true" class="ci-icon">
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+</span>
+<div>
+<strong>Email</strong>
+<div class="email-row">
+<span id="emailText">dwivedivaishnavi5200@gmail.com</span>
+<button aria-label="Copy email address" class="copy-email-btn" id="copyEmailBtn" title="Copy email">
+<svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="13" rx="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path></svg>
+<span id="copyBtnText">Copy</span>
+</button>
+</div>
+</div>
+</div>
+<div class="ci-item">
+<span aria-hidden="true" class="ci-icon">
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+</span>
+<div>
+<strong>Location</strong>
+<p>Uttar Pradesh, India</p>
+</div>
+</div>
+<div class="ci-item">
+<span aria-hidden="true" class="ci-icon">
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+</span>
+<div>
+<strong>Availability</strong>
+<p>
+<span aria-hidden="true" class="status-dot"></span>
+                Open to internships
+              </p>
+</div>
+</div>
+<div class="contact-social-btns">
+<a aria-label="Visit GitHub profile" class="csb github" href="https://github.com/Vaishnavi5200" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+              GitHub
+            </a>
+<a aria-label="Visit LinkedIn profile" class="csb linkedin" href="https://www.linkedin.com/in/vaishnavi-dwivedi-384773390" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+              LinkedIn
+            </a>
+</div>
+</div>
+<div class="contact-form-box reveal d1">
+<form aria-label="Contact form" class="cform" id="contactForm" novalidate="">
+<div class="cform-group">
+<label for="cname">Your Name <span aria-label="required" class="required">*</span></label>
+<input aria-describedby="cname-error" aria-required="true" autocomplete="name" id="cname" name="name" required="" type="text"/>
+<span aria-live="polite" class="field-error" id="cname-error" role="alert"></span>
+</div>
+<div class="cform-group">
+<label for="cemail">Email Address <span aria-label="required" class="required">*</span></label>
+<input aria-describedby="cemail-error" aria-required="true" autocomplete="email" id="cemail" name="email" required="" type="email"/>
+<span aria-live="polite" class="field-error" id="cemail-error" role="alert"></span>
+</div>
+<div class="cform-group">
+<label for="csubject">Subject</label>
+<input id="csubject" name="subject" placeholder="Internship / Collaboration / Question" type="text"/>
+</div>
+<div class="cform-group">
+<label for="cmessage">Message <span aria-label="required" class="required">*</span></label>
+<textarea aria-describedby="cmessage-error" aria-required="true" id="cmessage" name="message" required="" rows="5"></textarea>
+<span aria-live="polite" class="field-error" id="cmessage-error" role="alert"></span>
+</div>
+<button class="cform-submit" id="submitBtn" type="submit">
+<span id="submitText">Send Message</span>
+<svg aria-hidden="true" class="btn-arrow" fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+</button>
+<div aria-live="polite" class="cform-success" id="formSuccess" role="status">Your email app is opening with the message ready to send.</div>
+</form>
+</div>
+</div>
+</div>
+</section></main>
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+<div class="footer-inner">
+<span aria-hidden="true" class="footer-logo">VD<span class="accent">.</span></span>
+<p>Designed and developed by <strong>Vaishnavi Dwivedi</strong>.</p>
+<p class="footer-tagline">Built through curiosity, iteration and a lot of debugging.</p>
+<div class="footer-links">
+<a aria-label="GitHub" href="https://github.com/Vaishnavi5200" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+</a>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/in/vaishnavi-dwivedi-384773390" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+</a>
+</div>
+<p class="footer-copy">© <span id="footerYear"></span> Vaishnavi Dwivedi</p>
+</div>
+<button aria-label="Back to top" class="back-to-top" id="backToTop">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><path d="M18 15l-6-6-6 6"></path></svg>
+</button>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
